@@ -315,6 +315,7 @@ namespace DreamScene2
         {
             if (_desktopWindowHandle == IntPtr.Zero)
             {
+                notifyIcon1.Visible = false;
                 Environment.Exit(0);
                 return;
             }
@@ -332,6 +333,7 @@ namespace DreamScene2
             }
             else
             {
+                notifyIcon1.Visible = false;
                 PInvoke.UnregisterHotKey(this.Handle, PLAY_HOTKEY_ID);
                 CloseWindow(WindowType.None);
                 Settings.Save();
