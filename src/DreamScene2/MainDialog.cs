@@ -149,7 +149,7 @@ namespace DreamScene2
         {
             if (!TryGetWebView2Version(out _))
             {
-                MessageBox.Show("打开网页功能需要 WebView2 支持。请在托盘图标找到 DreamScene2 然后右键菜单，依次点击 [打开 URL] > [安装 WebView2...] 安装");
+                MessageBox.Show("打开网页功能需要 WebView2 支持。请在托盘图标找到 DreamScene2 然后右键菜单，依次点击 [打开 URL] > [安装 WebView2...] 安装。", Constant.ProjectName);
                 return;
             }
 
